@@ -16,6 +16,7 @@
   <property name="styleSheet">
    <string notr="true">#centralwidget {
 	background: rgba(32, 80, 96, 100);
+	border-image: url(:/images/fedora_login_background.jpg);
 }
 
 #topPanel {
@@ -99,6 +100,16 @@ QPushButton:hover {
         <property name="text">
          <string/>
         </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/restart_icon.png</normaloff>:/icons/restart_icon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
        </widget>
       </item>
       <item>
@@ -116,6 +127,19 @@ QPushButton:hover {
          </size>
         </property>
         <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/shutdown_icon.png</normaloff>:/icons/shutdown_icon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="shortcut">
          <string/>
         </property>
        </widget>
@@ -150,7 +174,7 @@ QPushButton:hover {
         </property>
         <property name="minimumSize">
          <size>
-          <width>150</width>
+          <width>350</width>
           <height>150</height>
          </size>
         </property>
@@ -160,7 +184,7 @@ QPushButton:hover {
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 1px solid</string>
+         <string notr="true">border-image: url(:/images/fedora_logo.png)</string>
         </property>
         <property name="text">
          <string/>
@@ -258,6 +282,9 @@ QPushButton:hover {
                <height>25</height>
               </size>
              </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
             </widget>
            </item>
           </layout>
@@ -315,6 +342,8 @@ QPushButton:hover {
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

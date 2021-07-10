@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>restart_icon.png</file>
+        <file>shutdown_icon.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>fedora_login_background.jpg</file>
+        <file>fedora_logo.png</file>
+    </qresource>
+</RCC>
